@@ -34,6 +34,10 @@ describe('getLake', ()=>{
         assert.equal(lake, undefined);
     })
 
+    it('Should throw an error if parameter is not a string', () => {
+        (()=>getLake(23)).should.throw(Error, 'Invalid string parameter');;
+    })
+
 
     it('Should throw an error if empty string is passed', () => {
         (()=>getLake(' ')).should.throw(Error, 'Invalid string parameter');
