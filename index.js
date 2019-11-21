@@ -12,10 +12,10 @@ const getLake =(lake)=>{
     }
 
     if(lake.length==0 | lake.trim().length==0 ){
-       throw new Error('Invalid string')
+       throw new Error('Invalid string parameter')
     }
 
-    const data = Lakes.filter(result => result.name === lake.trim().toLowerCase());
+    const data = getLakes.filter(result => result.name === lake.trim().toLowerCase());
 
     return data[0]
 }
