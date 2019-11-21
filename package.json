@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "nyc npm run test && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,8 @@
   "homepage": "https://github.com/nakiwuge/uganda-lakes#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.2.2"
+    "coveralls": "^3.0.8",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1"
   }
 }
