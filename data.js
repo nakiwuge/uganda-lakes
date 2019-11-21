@@ -78,7 +78,7 @@ module.exports = [
     },
     {
         name: "kitandra",
-        geomety:{
+        geometry:{
             lat: null,
             long:null,
         }

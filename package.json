@@ -1,0 +1,31 @@
+{
+  "name": "uganda-lakes",
+  "version": "1.0.0",
+  "description": "List Uganda Lakes",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nakiwuge/uganda-lakes.git"
+  },
+  "keywords": [
+    "uganda",
+    "lakes",
+    "uganda lakes"
+  ],
+  "author": "Miriam Nakiwuge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nakiwuge/uganda-lakes/issues"
+  },
+  "homepage": "https://github.com/nakiwuge/uganda-lakes#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  }
+}
