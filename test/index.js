@@ -8,17 +8,17 @@ describe('getLakes', ()=>{
         assert.equal(getLakes.length==27, true);
     })
 
-    it('Should have property name, geometry', () => {
+    it('Should have property name, location', () => {
         getLakes.map((lake)=>{
         lake.should.have.property('name')
-        lake.should.have.property('geometry')
+        lake.should.have.property('location')
         })
     })
 
     it('Should have property lat, long', () => {
         getLakes.map((lake)=>{
-        lake.geometry.should.have.property('lat')
-        lake.geometry.should.have.property('long')
+        lake.location.should.have.property('lat')
+        lake.location.should.have.property('long')
         })
     })
 })
