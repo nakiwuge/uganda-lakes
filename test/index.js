@@ -26,7 +26,8 @@ describe('getLakes', ()=>{
 describe('getLake', ()=>{
     it('Should return  a lake if lake exists', () => {
         const lake = getLake('Victoria')
-        assert.equal(lake.name, 'victoria');
+
+        assert.equal(lake.name, 'Victoria');
     })
 
     it('Should be undefined  if lake does not exist', () => {
