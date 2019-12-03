@@ -5,7 +5,7 @@ const {getLakes,getLake}=require('../index')
 
 describe('getLakes', ()=>{
     it('Should have length 27', () => {
-        assert.equal(getLakes.length==27, true);
+        assert.equal(getLakes.length==28, true);
     })
 
     it('Should have property name, location', () => {
@@ -15,10 +15,9 @@ describe('getLakes', ()=>{
         })
     })
 
-    it('Should have property lat, long', () => {
+    it('Should have property district', () => {
         getLakes.map((lake)=>{
-        lake.location.should.have.property('lat')
-        lake.location.should.have.property('long')
+          lake.location.should.have.property('districts')
         })
     })
 })
