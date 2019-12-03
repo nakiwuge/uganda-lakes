@@ -1,6 +1,6 @@
 {
   "name": "uganda-lakes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "List Uganda Lakes",
   "main": "index.js",
   "directories": {
